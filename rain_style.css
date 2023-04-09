@@ -1,0 +1,243 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+}
+
+.black {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 1;
+  z-index: 1;
+  pointer-events: none;
+  animation: fadeOut 1s ease-in-out forwards;
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.all {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url("./未命名的作品 (6).jpg");
+  background-color: black;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.rain_shape {
+  width: 40%;
+  height: 60%;
+  padding: 10px;
+  transform: skewX(-10deg) skewY(-5deg) translate(-200px, -130px);
+  box-shadow: 0 0 5px #495198, 0 0 10px #495198, 0 0 20px #238cbb, 0 0 10px #71b0ec inset;
+  animation: showBox 5s;
+}
+@keyframes showBox {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+canvas {
+  opacity: 80%;
+  width: 100%;
+  height: 100%;
+  background: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #fff, 0 0 5px #fff inset;
+  width: 800px;
+  height: 300px;
+  background-color: rgba(72, 72, 72, 0.684);
+  transform: skew(9deg) translate(-200px, 100px);
+  border: 2px solid #97fff8;
+  box-shadow: 0 0 5px #97fff8, 0 0 5px #97fff8 inset;
+}
+
+.typing-effect {
+  padding-left: 200px;
+}
+
+p {
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: "Press Start 2P", cursive;
+  color: #97fff8;
+  font-size: 10px;
+  display: inline-block;
+  animation: typing 3s steps(30) infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+.grop {
+  position: absolute;
+  top: 0;
+  right: 120px;
+  width: 600px;
+  height: 500px;
+}
+
+.user_name {
+  color: white;
+  font-size: 40px;
+}
+.user_name h2 {
+  margin: 0;
+  margin-right: 10px;
+}
+.user_name h1 {
+  margin: 10px 0;
+  font-size: 70px;
+}
+
+#buttons {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#buttons li {
+  width: 50%;
+  margin: 10px 0;
+}
+#buttons li a i {
+  font-size: 50px;
+  color: #ffffff;
+  text-shadow: 0px 0px 5px #fae7ff;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+  text-decoration: none;
+  color: #ffffff;
+}
+.button:hover {
+  color: #fff;
+  text-shadow: 1px 1px #97fff8;
+  box-shadow: 0 0 5px #97fff8, 0 0 5px #97fff8 inset;
+}
+
+.label {
+  margin-top: 5px;
+  text-align: center;
+  font-family: "Audiowide", cursive;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.pane {
+  padding: 10px;
+}
+
+#bar {
+  position: relative;
+  margin: 0 auto;
+  width: 300px;
+  height: 20px;
+  border: 2px solid #737373;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+@keyframes fills {
+  to {
+    left: 0;
+  }
+}
+.fill {
+  position: relative;
+  margin: 0 auto;
+  width: 340px;
+  height: 50px;
+  background: #ffffff;
+  left: -340px;
+  animation: fills 80s linear infinite;
+}
+
+.seperator-wrapper {
+  width: 100%;
+  position: relative;
+  bottom: 280px;
+  right: -447px;
+}
+
+.seperator {
+  width: 3000px;
+  height: 15px;
+  animation: rotate 3s infinite linear;
+  -webkit-animation: rotate 3s infinite linear;
+}
+@keyframes rotate {
+  from {
+    background-position: -3000px;
+  }
+  to {
+    background-position: 0px;
+  }
+}
+.gradient {
+  background: rgb(48, 255, 144);
+  background: linear-gradient(to right, rgb(48, 255, 144) 0%, rgb(237, 45, 237) 25%, rgb(201, 152, 38) 50%, rgb(48, 255, 230) 75%, rgb(48, 255, 144) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#30ff90", endColorstr="#30ff90",GradientType=1 );
+}
+
+.px-glitchtext-anim {
+  animation: glitchtext 300ms linear infinite;
+}
+
+@keyframes glitchtext {
+  0% {
+    text-shadow: 3px 0 0 rgb(255, 0, 255), -3px 0 0 rgb(0, 255, 255);
+  }
+  20% {
+    text-shadow: 0 0 0 rgb(255, 0, 255), -3px -1px 0 rgb(0, 255, 255);
+  }
+  40% {
+    text-shadow: -3px -2px 0 rgb(255, 0, 255), 2px 1px 0 rgb(0, 255, 255);
+  }
+  60% {
+    text-shadow: -1px 2px 0 rgb(255, 0, 255), 0 0 0 rgb(0, 255, 255);
+  }
+  80% {
+    text-shadow: 2px -1px 0 rgb(255, 0, 255), 3px 2px 0 rgb(0, 255, 255);
+  }
+  100% {
+    text-shadow: 3px 0 0 rgb(255, 0, 255), -3px 0 0 rgb(0, 255, 255);
+  }
+}/*# sourceMappingURL=rain_style.css.map */

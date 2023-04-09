@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./rain_style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://welai.github.io/glow-sans/css/glow-sans.css">
+
+
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="https://kit.fontawesome.com/b6b64e7e59.js" crossorigin="anonymous"></script>
+
+
+
+</head>
+
+<body>
+  <div class="black"> </div>
+  <div class="all">
+
+
+    <div class="rain_shape">
+      <canvas id='canvas1'></canvas>
+      <script src='rain_script.js'></script>
+
+    </div>
+    <div>
+      <div class="box pane">
+        <div id="bar">
+          <!-- <div>14141</div> -->
+          <div class="fill"></div>
+        </div>
+        <div class="typing-effect">
+          <p>
+            email:rong@rorong.com <br>
+            blog:https://rorong.com/
+
+          </p>
+        </div>
+      </div>>
+    </div>
+<!-- 
+    <section class="seperator-wrapper">
+      <div class="seperator gradient">
+      </div>
+    </section> -->
+
+    <div class="grop">
+      <div class="user_name">
+        <div class="px-glitchtext px-glitchtext-anim" style="display: flex; align-items: center ">
+          <h2><i class="fa-regular fa-snowflake"></i></h2>
+          <h1>
+            雪花燈籠
+          </h1>
+        </div>
+
+      </div>
+      <div class="seperator gradient">
+      </div>
+
+      <div id="app">
+        <ul id="buttons">
+          <li v-for="(button, index) in buttons" :key="index">
+            <a :href="button.url" :class="button.class" target="_blank">
+              <i :class=" [button.img , 'fa-fade'] "></i>
+              <h1 class="label">{{ button.label }}</h1>
+
+            </a>
+          </li>
+        </ul>
+      </div>
+
+
+    </div>
+
+
+    <script src="./vue.js"></script>
+  </div>
+</body>
+
+</html>
