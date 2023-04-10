@@ -39,7 +39,7 @@ const app = Vue.createApp({
           label: "Blog",
         },
         {
-          url: "https://shope.ee/6f3P",
+          url: "https://shope.ee/6AEm2WEu3Q",
           class: "button n02",
           img: "fa-solid fa-bag-shopping",
           icon: "#icon-f4ce3a44c2936b27f0e8b764bae7e6af",
