@@ -89,3 +89,29 @@ window.addEventListener("resize", function () {
   gradient.addColorStop(0.6, ' rgba(48,255,144,1)');
   gradient.addColorStop(0.8, ' rgba(237,45,237,1)');
 });
+
+const text = "Hello, I am Rong/Snowflake Lantern. \nLuca is my oshi. \nemail: rong@rorong.com \nblog: https://rorong.com/ \nig: @ron.eros";
+let i = 0;
+
+function typeWriter() {
+  const char = text.charAt(i);
+  const typewriter = document.getElementById("typewriter");
+  if (char === '\n') {
+    typewriter.innerHTML += "<br/>";
+  } else {
+    typewriter.innerHTML += char;
+  }
+  i++;
+  if (i < text.length) {
+    setTimeout(typeWriter, 80);
+  } else {
+    i = 0;
+    setTimeout(() => {
+      typewriter.innerHTML = "";
+      typeWriter();
+    }, 10000); // 等待 5 秒後再次顯示
+  }
+}
+
+typeWriter();
+
