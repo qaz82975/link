@@ -336,7 +336,7 @@ canvas {
     transform: skew(9deg) translate(-100px, 120px);
   }
   #typewriter {
-    font-size: 5px;
+    font-size: 8px;
     line-height: 1.2;
   }
   #bar {
