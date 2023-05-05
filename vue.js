@@ -2,6 +2,13 @@ const app = Vue.createApp({
   data() {
     return {
       buttons: [
+            {
+          url: "https://www.patreon.com/rorong",
+          class: "button n03",
+          img: "fa-brands fa-patreon",
+          icon: "icon.svg#ig_icon",
+          label: "patreon",
+        },
         {
           url: "https://www.instagram.com/ron.eros/",
           class: "button n03",
